@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+</head>
+<body>
+    <script>
+        let guess = Number(prompt("Guess number"));
+let tries = 1
+
+while (guess !== 7) {
+  if (guess > 7) {
+    alert("Too high! Try a lower number.")
+  } else {
+    alert("Too low! Try a higher number.")
+  }
+
+  guess = Number(prompt("Guess again"))
+  tries++
+}
+
+alert("Correct guess!")
+alert("Number of tries: " + tries)
+    </script>
+    
+</body>
+</html>
